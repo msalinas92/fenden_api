@@ -1,0 +1,82 @@
+swagger: "2.0"
+info:
+  description: "Esta es la API de fenden"
+  version: "0.0.1"
+  title: "Fenden API"
+host: "petstore.swagger.io"
+basePath: "/v1"
+tags:
+- name: "products"
+  description: "Products for sale"
+- name: "category"
+  description: "Product categories"
+schemes:
+- "https"
+paths:
+  /product:
+    post:
+      tags:
+      - "products"
+      summary: "Agregar entrada"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Pet object that needs to be added to the store"
+        required: true
+        schema:
+          $ref: '#/definitions/Plato'
+      responses:
+        405:
+          description: "Invalid input"
+      security:
+      - petstore_auth:
+        - "write:pets"
+        - "read:pets"
+    get:
+      tags:
+      - "entradas"
+      summary: "Obtener todas las entradas"
+      description: ""
+      operationId: "updatePet"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Pet object that needs to be added to the store"
+        required: true
+        schema:
+          $ref: "#/definitions/Pet"
+      responses:
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Pet not found"
+        405:
+          description: "Validation exception"
+      security:
+      - petstore_auth:
+        - "write:pets"
+        - "read:pets"
+definitions:
+
+  Product:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+      nombre:
+        type: "string"
+      precio:
+        type: "integer"
+      id_categoria:
+        type: "integer"
+ 
