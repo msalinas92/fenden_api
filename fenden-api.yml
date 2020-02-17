@@ -1,0 +1,172 @@
+swagger: "2.0"
+info:
+  description: "Esta es la API de fenden"
+  version: "0.0.1"
+  title: "Fenden API"
+host: "petstore.swagger.io"
+basePath: "/v1"
+tags:
+- name: "products"
+  description: "Products for sale"
+- name: "categories"
+  description: "Product categories"
+schemes:
+- "https"
+paths:
+  /categories:
+    get:
+        tags:
+        - "categories"
+        summary: "Get all categories"
+        description: ""
+        consumes:
+        - "application/json"
+        produces:
+        - "application/json"
+        parameters:
+        - in: "body"
+          name: "body"
+          description: "Pet object that needs to be added to the store"
+          required: true
+          schema:
+            $ref: '#/definitions/Product'
+        responses:
+          400:
+            description: "Invalid ID supplied"
+          404:
+            description: "Pet not found"
+          405:
+            description: "Validation exception"
+  /categories/{id}:
+    get:
+        tags:
+        - "categories"
+        summary: "Get all categories"
+        description: ""
+        consumes:
+        - "application/json"
+        produces:
+        - "application/json"
+        parameters:
+        - in: "path"
+          name: "id"
+          type: "string"
+          required: true
+          description: Numeric ID of the user to get
+        - in: "body"
+          name: "body"
+          description: "Pet object that needs to be added to the store"
+          required: true
+          schema:
+            $ref: '#/definitions/Product'
+        responses:
+          400:
+            description: "Invalid ID supplied"
+          404:
+            description: "Pet not found"
+          405:
+            description: "Validation exception"
+            
+  /{category}/product:
+    post:
+      tags:
+      - "products"
+      summary: "Add Product"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "path"
+        name: "category"
+        type: "string"
+        required: true
+        description: Numeric ID of the user to get
+      - in: "body"
+        name: "body"
+        description: "Pet object that needs to be added to the store"
+        required: true
+        schema:
+          $ref: '#/definitions/Product'
+      responses:
+        405:
+          description: "Invalid input"
+    get:
+      tags:
+      - "products"
+      summary: "Obtener todas las entradas"
+      description: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "path"
+        name: "category"
+        type: "string"
+        required: true
+        description:  "category name"
+      - in: "body"
+        name: "body"
+        description: "Pet object that needs to be added to the store"
+        required: true
+        schema:
+          $ref: '#/definitions/Product'
+      responses:
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Pet not found"
+        405:
+          description: "Validation exception"
+  /{category}/product/{id}:
+    get:
+        tags:
+        - "products"
+        summary: "Obtener todas las entradas"
+        description: ""
+        consumes:
+        - "application/json"
+        - "application/xml"
+        produces:
+        - "application/xml"
+        - "application/json"
+        parameters:
+        - in: "path"
+          name: "category"
+          type: "string"
+          required: true
+          description:  "category name"
+        - in: "path"
+          name: "id"
+          type: "string"
+          required: true
+          description:  "category name"
+        - in: "body"
+          name: "body"
+          description: "Pet object that needs to be added to the store"
+          required: true
+          schema:
+            $ref: '#/definitions/Product'
+        responses:
+          400:
+            description: "Invalid ID supplied"
+          404:
+            description: "Pet not found"
+          405:
+            description: "Validation exception"
+definitions:
+  Product:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+      nombre:
+        type: "string"
+      precio:
+        type: "integer"
+      id_categoria:
+        type: "integer"
+ 
