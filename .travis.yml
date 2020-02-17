@@ -27,14 +27,16 @@ script:
   - spectacle --target-dir docs-fenden --target-file fenden-api.html fenden-api.yml
   - redoc-cli bundle -o fenden-api-redoc.html fenden-api.yml
 
-  - mv docs-fenden/fenden-api.html .
+  - mv docs-fenden/fenden-api.html docs/
+  - mv fenden-api-redoc.html docs/
+  - cp README.md docs/
 
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep-history: true
-  local-dir: ./
+  local-dir: docs
   verbose: true
   on:
     branch: master
