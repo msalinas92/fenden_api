@@ -3,13 +3,15 @@ info:
   description: "Esta es la API de fenden"
   version: "0.0.1"
   title: "Fenden API"
-host: "petstore.swagger.io"
+host: "api.fenden.com"
 basePath: "/v1"
 tags:
 - name: "products"
   description: "Products for sale"
 - name: "categories"
   description: "Product categories"
+- name: "order"
+  description: "Orders"
 schemes:
 - "https"
 paths:
@@ -163,10 +165,21 @@ definitions:
     properties:
       id:
         type: "integer"
-      nombre:
+      name:
         type: "string"
-      precio:
+      description:
+        type: "string"
+      price:
         type: "integer"
-      id_categoria:
+      start_date:
+        type: "string"
+      end_date:
+        type: "string"
+      category_id:
         type: "integer"
+      tags:
+        type: array
+        items:
+          type: string
+      
  
