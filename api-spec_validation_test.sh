@@ -11,7 +11,7 @@ setUp()
   githubProjectId=fenden_api
   
   openApiSpecFileNames=(
-     'fenden-api.yaml'
+     'fenden-api.yml'
   )
   echo "Executing tests... ^_^"
 }
