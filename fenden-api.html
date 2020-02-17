@@ -45,6 +45,10 @@
               </li>
             </ul>
           </section>
+          <section>
+            <a href="#tag-order">order</a>
+            <ul> </ul>
+          </section>
           <h5>Schema Definitions</h5>
           <a href="#definition-Product"> Product </a>
         </nav>
@@ -66,7 +70,7 @@
               <div class="doc-examples">
                 <section>
                   <h5>API Endpoint</h5>
-                  <!-- <div class="hljs"> --><pre><code>https://petstore.swagger.io/v1</code></pre>
+                  <!-- <div class="hljs"> --><pre><code>https://api.fenden.com/v1</code></pre>
                   <!-- </div> -->
                   <h5>Schemes:
                     <span>https</span>
@@ -151,9 +155,15 @@
                   <head></head>
                   <body><pre><code class="hljs language-json">{
   <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;nombre&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;precio&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;id_categoria&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;price&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;start_date&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;end_date&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;category_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;tags&quot;</span>: [
+    <span class="hljs-string">&quot;string&quot;</span>
+  ]
 }
 </code></pre> </body>
                   </html>
@@ -248,9 +258,15 @@
                   <head></head>
                   <body><pre><code class="hljs language-json">{
   <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;nombre&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;precio&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;id_categoria&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;price&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;start_date&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;end_date&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;category_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;tags&quot;</span>: [
+    <span class="hljs-string">&quot;string&quot;</span>
+  ]
 }
 </code></pre> </body>
                   </html>
@@ -376,9 +392,15 @@
                   <head></head>
                   <body><pre><code class="hljs language-json">{
   <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;nombre&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;precio&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;id_categoria&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;price&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;start_date&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;end_date&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;category_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;tags&quot;</span>: [
+    <span class="hljs-string">&quot;string&quot;</span>
+  ]
 }
 </code></pre> </body>
                   </html>
@@ -478,9 +500,15 @@
                   <head></head>
                   <body><pre><code class="hljs language-json">{
   <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;nombre&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;precio&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;id_categoria&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;price&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;start_date&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;end_date&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;category_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;tags&quot;</span>: [
+    <span class="hljs-string">&quot;string&quot;</span>
+  ]
 }
 </code></pre> </body>
                   </html>
@@ -591,9 +619,15 @@
                   <head></head>
                   <body><pre><code class="hljs language-json">{
   <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;nombre&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;precio&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;id_categoria&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;price&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;start_date&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;end_date&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;category_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;tags&quot;</span>: [
+    <span class="hljs-string">&quot;string&quot;</span>
+  ]
 }
 </code></pre> </body>
                   </html>
@@ -637,6 +671,12 @@
               </div>
             </div>
           </div>
+          <h1 id="tag-order" class="swagger-summary-tag" data-traverse-target="tag-order">order</h1>
+          <div class="tag-description doc-row">
+            <div class="doc-copy">
+              <p>Orders</p>
+            </div>
+          </div>
           <h1>Schema Definitions</h1>
           <div id="definition-Product" class="definition panel" data-traverse-target="definition-Product">
             <h2 class="panel-title">
@@ -656,20 +696,47 @@
                       <span class="json-property-type">integer</span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
-                    <dt data-property-name="nombre">
-                      <span class="json-property-name">nombre:</span>
+                    <dt data-property-name="name">
+                      <span class="json-property-name">name:</span>
                       <span class="json-property-type">string</span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
-                    <dt data-property-name="precio">
-                      <span class="json-property-name">precio:</span>
+                    <dt data-property-name="description">
+                      <span class="json-property-name">description:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="price">
+                      <span class="json-property-name">price:</span>
                       <span class="json-property-type">integer</span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
-                    <dt data-property-name="id_categoria">
-                      <span class="json-property-name">id_categoria:</span>
+                    <dt data-property-name="start_date">
+                      <span class="json-property-name">start_date:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="end_date">
+                      <span class="json-property-name">end_date:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="category_id">
+                      <span class="json-property-name">category_id:</span>
                       <span class="json-property-type">integer</span>
                       <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="tags">
+                      <span class="json-property-name">tags:</span>
+                      <span class="json-property-type">string[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema"> </div>
+                      </section>
                     </dt>
                   </dl>
                 </section>
@@ -682,9 +749,15 @@
                   <head></head>
                   <body><pre><code class="hljs language-json">{
   <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;nombre&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;precio&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
-  <span class="hljs-attr">&quot;id_categoria&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;price&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;start_date&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;end_date&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;category_id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;tags&quot;</span>: [
+    <span class="hljs-string">&quot;string&quot;</span>
+  ]
 }
 </code></pre> </body>
                   </html>
