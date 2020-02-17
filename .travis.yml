@@ -24,7 +24,7 @@ script:
   - export BRANCH=${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH}
   # All variables ready - run the test script
   - bash api-spec_validation_test.sh
-
+  - mdkdir docs/
   - spectacle --target-dir docs-fenden --target-file fenden-api.html fenden-api.yml
   - redoc-cli bundle -o fenden-api-redoc.html fenden-api.yml
 
