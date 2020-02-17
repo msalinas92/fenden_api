@@ -27,7 +27,8 @@ script:
   - spectacle --target-dir docs-fenden --target-file fenden-api.html fenden-api.yml
   - redoc-cli bundle -o fenden-api-redoc.html fenden-api.yml
 
-  - mv docs-fenden/fenden-api.html docs/
+
+  - mv docs-fenden/* docs/
   - mv fenden-api-redoc.html docs/
   - cp README.md docs/
 
