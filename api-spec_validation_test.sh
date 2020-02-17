@@ -7,7 +7,7 @@ setUp()
 
   # Setup local variables to dynamically generate the API spec URL from pull request.
   githubRawResourceBaseUrl=https://raw.githubusercontent.com
-  githubUsername=msalinas
+  githubUsername=msalinas92
   githubProjectId=fenden_api
   
   openApiSpecFileNames=(
